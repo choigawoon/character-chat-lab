@@ -1,0 +1,14 @@
+{
+  "name": "character-chat-lab",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/main.mjs",
+    "dev": "PORT=8795 node --env-file-if-exists=.env server/main.mjs",
+    "test": "node --test server/tests/*.test.mjs"
+  }
+}

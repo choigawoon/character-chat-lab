@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+*.pem
+*.key
+
+# 모델 서버 주소 · 키 · 머리글 — .env.example 을 복사해 쓴다
+.env
+
+# server/build.mjs 가 굽는 해시 이름 화면 파일
+web/assets/
