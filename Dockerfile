@@ -7,8 +7,8 @@ COPY server/*.mjs ./server/
 COPY web/ ./web/
 # 화면 파일을 내용 해시 이름으로 web/assets/ 에
 RUN node server/build.mjs
-# 기본 캐릭터 설정집 — git 정본을 구워 읽기만 한다(고치면 다시 배포)
-COPY characters.json ./
+# 세계 · 상황극 — git 정본을 구워 읽기만 한다(고치면 다시 빌드)
+COPY content/worlds/ ./content/worlds/
 USER node
 EXPOSE 8080
 CMD ["node", "server/main.mjs"]
